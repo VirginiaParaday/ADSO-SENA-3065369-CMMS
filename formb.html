@@ -15,23 +15,23 @@ Aprendiz: Carlos Mauricio Martinez Sarmiento
 <body>
     <header>
         <section>
-            <h1></h1>
-            <h2></h2>
+            <h1>ADSO - SENA</h1>
+            <h2>Ficha: 3065369</h2>
         </section>
         <section>
             <nav>
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="forma.html">Formulario: No. 1</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="handwritten.html">Código escrito</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="contact.html">Contacto</a>
                     </li>       
                 </ul>
             </nav>
@@ -39,91 +39,106 @@ Aprendiz: Carlos Mauricio Martinez Sarmiento
     </header>
     <main>
         <section>
-            <h1></h1>
+            <h1>Validando formulario No. 1</h1>
             <br>
-            <form action="" method="">
+            <form action="welcome.html" method="get">
+                <!-- 01) Solo letras: Mayusculas y minusculas -->
                 <div>
-                    <label></label>              
-                    <input type="text">
+                    <label for="idText01">Ingresa letras minusculas o mayusculas</label>              
+                    <input type="text" id="idText01" name="nameText01" pattern="[A-Za-z]+" title="Ingresa solo letras 'MAYUSCULAS y 'MINUSCULAS " required>
                 </div>
+                <!-- 02) Solo letras: Minusculas -->
                 <div>
-                   <label></label>                  
-                    <input type="text">
+                    <label for="idText02">Ingresa solo letras minusculas</label>              
+                    <input type="text" id="idText02" name="nameText02" pattern="[a-z]+" title="Ingresa solo letras 'MINUSCULAS'" required>
                 </div>
+                <!-- 03) Seleccion de color -->
                 <div>                    
-                    <label></label>      
-                    <input type="color">
+                    <label for="idText03">Color favorito</label>
+                    <input type="color" id="idText03" name="nameText03" title="Selecciona el color" value="#0337A1" required>
                 </div>
+                <!-- 04) Solo numeros: Edad -->
                 <div>                    
-                    <label></label>      
-                    <input type="number">
+                    <label for="idText04">Edad</label>
+                    <input type="number" id="idText04" name="nameText04" min="1" max="120" step="1" title="Selecciona tu edad: 1 a 120 años" required>
                 </div>
+                <!-- 05) Solo números -->
                 <div>                    
-                    <label></label>      
-                    <input type="text">
+                    <label for="idText05">Solo números</label>
+                    <input type="text" id="idText05" name="nameText05" pattern="^-?\d+$" title="Escribe solo números" required>
                 </div>
+                <!-- 06) Solo números positivos -->
                 <div>                    
-                    <label></label>      
-                    <input type="text">
+                    <label for="idText06">Solo números positivos</label>
+                    <input type="text" id="idText06" name="nameText06" pattern="^\d+$" title="Escribe solo números positivos" required>
                 </div>
+                <!-- 07) Incremento -->
                 <div>                    
-                    <label></label>      
-                    <input type="number">
+                    <label for="idText07">Incremento de número de 0.5 en 0.5 hasta 20, no decrementa menos de 10, inicia con 15</label>
+                    <input type="number" id="idText07" name="nameText07" value="15" min="10" max="20" step="0.5" title="Incremento" required>
                 </div>
+                <!-- 08) Fecha de nacimiento -->
                 <div>                    
-                    <label></label>      
-                    <input type="date">
+                    <label for="idText08">Fecha de nacimiento</label>
+                    <input type="date" id="idText08" name="nameText08" title="Selecciona la fecha de nacimiento" required>
                 </div>
+                <!-- 09) Hora -->
                 <div>                    
-                    <label></label>      
-                    <input type="time">
+                    <label for="idText09">Hora</label>
+                    <input type="time" id="idText09" name="nameText09" title="Ingresa la hora" required>
                 </div>
+                <!-- 10) Lista: Ciudad -->
                 <div>                    
-                   <label></label>      
-                    <select>
-                        <option value="">-</option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
-                        <option value=""></option>
+                    <label for="idText10">Ciudad</label>
+                    <select id="idText10" name="nameText10" required>
+                        <option value="">--Selecciona una Ciudad--</option>
+                        <option value="Madrid">Bogota</option>
+                        <option value="Barcelona">Bucaramanga</option>
+                        <option value="Valencia">Giron</option>
+                        <option value="Sevilla">Piedecuesta</option>
                     </select>                   
                 </div>
+                <!-- 11) Genero -->
                 <div>               
-                    <p></p>     
-                    <label></label>      
-                    <input type="radio">
-                   <label></label>      
-                    <input type="radio">
+                    <p>Genero</p>     
+                    <label for="idText11.1">Masculino</label>
+                    <input type="radio" id="idText11.1" name="nameText11.1" value="Masculino"  title="Masculino" checked required>
+                    <label for="idText11.2">Femenino</label>
+                    <input type="radio" id="idText11.2" name="nameText11.1" value="Femenino"  title="Femenino">
                 </div>
+                <!-- 12) Materias -->
                 <div>                    
-                    <label></label>         
+                    <label for="idText12">Materias</label>   
                     <br><br>              
-                    <label></label>
-                    <input type="checkbox">                    
-                    <label></label>
-                    <input type="checkbox">
-                    <label></label>
-                    <input type="checkbox">
-                    <label></label>
-                    <input type="checkbox">
-                    <label></label>
-                    <input type="checkbox">
-                    <label></label>
-                    <input type="checkbox">
+                    <label for="idText12.1">HTML</label>
+                    <input type="checkbox" id="idText12.1" name="nameText12.1">
+                    <label for="idText12.2">CSS</label>
+                    <input type="checkbox" id="idText12.2" name="nameText12.2">
+                    <label for="idText12.3">JS</label>
+                    <input type="checkbox" id="idText12.3" name="nameText12.1">
+                    <label for="idText12.4">JAVA</label>
+                    <input type="checkbox" id="idText12.4" name="nameText12.2">
+                    <label for="idText12.5">PYTHON</label>
+                    <input type="checkbox" id="idText12.5" name="nameText12.1">
+                    <label for="idText12.6">PHP</label>
+                    <input type="checkbox" id="idText12.6" name="nameText12.2">
                 </div>
+                <!-- 13) Imagen -->
                 <div>
-                    <label></label>      
+                    <label for="idText13">Imagen: .jpg y .png</label>
                     <input type="file" id="idText13" name="nameText13" accept=".jpg, .png" multiple required>
                 </div>
+                <!-- 14) Contraseña -->
                 <div>
-                    <label></label>      
+                    <label for="idText14">Contraseña</label>
                     <input type="password" id="idText14" name="nameText14" title="Ingresa la contraseña" required>
                 </div>
+                <!-- 15) Nombre aprendiz -->
                 <div>
-                    <<label></label>      
-                    <input type="text">
+                    <label for="idText15">Nombre del aprendiz</label>
+                    <input type="text" id="idText15" name="nameText15" title="Ingresa tu nombre" value="Carlos Mauricio Martinez Sarmiento" readonly required>
                 </div>
-                <button type="submit"></button>
+                <button type="submit" title="Input of type Submit">Enviar</button>
             </form>
         </section>       
     </main>

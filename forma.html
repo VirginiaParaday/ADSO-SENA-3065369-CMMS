@@ -15,23 +15,23 @@ Aprendiz: Carlos Mauricio Martinez Sarmiento
 <body>
     <header>
         <section>
-            <h1></h1>
-            <h2></h2>
+            <h1>ADSO - SENA</h1>
+            <h2>Ficha: 3065369</h2>
         </section>
         <section>
             <nav>
                 <ul>
                     <li>
-                        <a href=""></a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="formb.html">Formulario: No. 2</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="handwritten.html">Código escrito</a>
                     </li>
                     <li>
-                        <a href=""></a>
+                        <a href="contact.html">Contacto</a>
                     </li>       
                 </ul>
             </nav>
@@ -39,109 +39,110 @@ Aprendiz: Carlos Mauricio Martinez Sarmiento
     </header>
     <main>
         <section>
-            <h1></h1>
+            <h1>Validando formulario No. 2</h1>
             <br>
-            <form action="" method="">
+            <form action="welcome.html" method="get">
                 <div>
-                    <label></label>
-                    <input type="text">                
+                    <label for="idText" title="Input of type Text">Text</label>
+                    <input type="text" name="nameText" id="idText" size="50" autocomplete="name" value="I am a text" style="font-size: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="number">                
+                    <label for="idNumber" title="Input of type Number">Number</label>
+                    <input type="number" name="nameNumber" id="idNumber" step="5" min="5" max="40" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="password">                
+                    <label for="idPassword" title="Input of type Password">Password</label>
+                    <input type="password" name="namePassword" id="idPassword" placeholder="XXXXXX" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="email">                
+                    <label for="idEmail" title="Input of type Email">Email</label>
+                    <input type="email" name="nameEmail" id="idEmail" placeholder="xxxxxxx@xxxx.xxx" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="off" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="date">                
+                    <label for="idDate" title="Input of type Date">Date</label>
+                    <input type="date" name="nameDate" id="idDate" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="color">                
+                    <label for="idColor" title="Input of type Color">Color</label>
+                    <input type="color"  name="nameColor" id="idColor" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="checkbox">                
+                    <label for="idEchekbox" title="Input of type Checkbox">Checkbox</label>
+                    <input type="checkbox"  name="nameCheckbox" id="idEchekbox" checked required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="radio">
-                    <input type="radio">              
+                    <label for="idRadioOne" title="Input of type Radio">Radio</label>
+                    <input type="radio"  name="nameRadio" id="idRadioOne" required>
+                    <input type="radio"  name="nameRadio" id="idRadiTwo" checked required>              
                 </div>
                 <div>
-                    <label></label>
-                    <input type="range">                
+                    <label for="idRange" title="Input of type Range">Range</label>
+                    <input type="range"  name="nameRange" id="idRange" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="button">                
+                    <label for="idButton" title="Input of type Button">Buttom</label>
+                    <input type="button"  name="nameButtom" id="idButton" value="Input Buttom" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="time">                
+                    <label for="idTime" title="Input of type Time">Time</label>
+                    <input type="time"  name="nameTime" id="idTime" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="datetime">                
+                    <label for="idDatetime" title="Input of type Data Time">Data Time</label>
+                    <input type="datetime" name="nameDatetime" id="idDatetime" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="datetime-local">                
+                    <label for="idDatetimeLocal" title="Input of type Data Time Local">Data Time Local</label>
+                    <input type="datetime-local" name="nameDatetimelocal" id="idDatetimeLocal" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="month">                
+                    <label for="idMonth" title="Input of type Month">Month</label>
+                    <input type="month"  name="nameMonth" id="idMonth" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="week">                
+                    <label for="idWeek" title="Input of type Week">Week</label>
+                    <input type="week" name="nameWeek" id="idWeek" style="color: green; font-style: italic;" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="file">                
+                    <label for="idFile" title="Input of type File">File</label>
+                    <input type="file" name="nameFile" id="idFile" accept="image/*,.pdf" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="hidden">                
+                    <!-- Hidden: Permite incluir datos que los usuarios no pueden ver ni modificar cuando se envía un formulario. -->
+                    <label for="idHidden" title="Input of type Hidden">Hidden</label>
+                    <input type="hidden" name="nameHidden" id="idHidden" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="reset">                
+                    <label for="idReset" title="Input of type Reset">Reset</label>
+                    <input type="reset" name="nameReset" id="idReset" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="search">                
+                    <label for="idSearch" title="Input of type Search">Search</label>
+                    <input type="search" name="nameSearch" id="idSearch" placeholder="What is your query?" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="tel">                
+                    <label for="idTel" title="Input of type Tel">Tel</label>
+                    <input type="tel" name="nameTel" id="idTel" maxlength="10" placeholder="(xxx)xxx-xxxxxxx" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>                
                 </div>
                 <div>
-                    <label></label>
-                    <input type="url">                
+                    <label for="idUrl" title="Input of type URL">Url</label>
+                    <input type="url" name="nameUrl" id="idUrl" placeholder="http:\\www..." readonly required>                
                 </div>
                 <div>
-                    <label></label>
-                    <select>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
+                    <label for="idSelect" title="Select">Select the city</label>
+                    <select name="nameSelect" id="idSelect">
+                        <option value="">Select</option>
+                        <option value="1">Bucaramanga</option>
+                        <option value="2">Giron</option>
+                        <option value="3">Floridablanca</option>
+                        <option value="4">Piedecuesta</option>
                     </select>               
                 </div>
                 <div>
-                    <label></label>
-                    <textarea></textarea>
+                    <label for="idTextarea" title="Textarea">Message</label>
+                    <textarea name="nameTextarea" id="idTextarea" rows="4" cols="50" style="resize: none;"></textarea>
                 </div>
-                <button type="submit"></button>
+                <button type="submit" title="Input of type Submit">Enviar</button>
             </form>
         </section>       
     </main>
